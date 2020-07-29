@@ -1,0 +1,3 @@
+[submodule "scripts/audit-tests"]
+	path = scripts/audit-tests
+	url = https://github.com/annygakh/audit-tests

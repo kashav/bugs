@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -e
+
+while IFS= read -r line; do
+  # Remove leading manifest path.
+  line=${line#testing/web-platform/meta}
+
+  # Remove trailing file extensions.
+  line=${line%.ini}
+
+  # Test files may have a different extension than the actual test name, so also
+  # trim these.
+  line=${line%.htm}
+  line=${line%.html}
+  line=${line%.js}
+  line=${line%.py}
+  line=${line%.xht}
+  line=${line%.xhmtl}
+
+  printf '%s\n' "$line"
+done
