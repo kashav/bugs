@@ -1,0 +1,12 @@
+<!doctype html>
+Yikes
+<script>
+top.postMessage("script", "*");
+requestAnimationFrame(function f() {
+  requestAnimationFrame(f);
+  top.postMessage("tick", ORIGIN);
+});
+onload = function() {
+  top.postMessage(getComputedStyle(document.body).color || "empty", "*");
+}
+</script>

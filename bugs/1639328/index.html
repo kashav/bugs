@@ -1,0 +1,12 @@
+<!doctype html>
+<script>
+onmessage = function(e) {
+  console.log(e);
+  document.getElementById("log").textContent += JSON.stringify({ data: e.data, origin: e.origin }) + "\n";
+};
+</script>
+<pre id="log"></pre>
+<div style="display: none">
+  <iframe src="frame.html"></iframe>
+  <iframe src="http://example.org/frame.html"></iframe>
+</div>

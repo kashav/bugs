@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+  <h1>title</h1>
+  <iframe src="https://example.com"></iframe>
+  <script type="text/javascript">
+    window.onload = () => {
+      // Throws "Uncaught DOMException: Access to property denied"
+      window.find(
+        /* aString = */ "Example",
+        /* aCaseSensitive = */ false,
+        /* aBackwards = */ false,
+        /* aWrapAround = */ false,
+        /* aWholeWord = */ false,
+        /* aSearchInFrames = */ true,
+        /* aShowDialog = */ false
+      );
+    }
+  </script>
+</body>

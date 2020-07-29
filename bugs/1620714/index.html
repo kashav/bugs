@@ -1,0 +1,37 @@
+<!doctype html>
+<button onclick="go('window.html')">same-origin</button>
+<button onclick="go('https://bug1620714.bmoattachments.org/attachment.cgi?id=9150806')">cross-origin</button>
+<pre id="p"></pre>
+<script>
+//   Child 192494, Main Thread] WARNING: calling SetClosed: file /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp, line 6155
+
+// #0  nsGlobalWindowOuter::FinalClose() (this=0x7f696576b520)
+//     at /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp:6152
+// #1  0x00007f695c1e4209 in nsGlobalWindowOuter::CloseOuter(bool) (this=0x7f696576b520, aTrustedCaller=<optimized out>)
+//     at /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp:6120
+// #2  0x00007f695db8c731 in mozilla::dom::ContentChild::RecvWindowClose(mozilla::dom::MaybeDiscarded<mozilla::dom::BrowsingContext> const&, bool) (this=<optimized out>, aContext=..., aTrustedCaller=false)
+//     at /home/kashav/src/hg.mozilla.org/mozilla-central/dom/ipc/ContentChild.cpp:3735
+
+
+// [Child 192418, Main Thread] WARNING: calling SetClosed: file /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp, line 6155
+
+// #0  nsGlobalWindowOuter::FinalClose() (this=0x7fc60bc0c300)
+//     at /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp:6152
+// #1  0x00007fc6235f4209 in nsGlobalWindowOuter::CloseOuter(bool) (this=0x7fc60bc0c300, aTrustedCaller=<optimized out>)
+//     at /home/kashav/src/hg.mozilla.org/mozilla-central/dom/base/nsGlobalWindowOuter.cpp:6120
+// #2  0x00007fc6240d071f in mozilla::dom::Window_Binding::close(JSContext*, JS::Handle<JSObject*>, void*, JSJitMethodCallArgs const&) (cx=0x7fc60d61c000, obj=..., void_self=0x7fc60d7a6400, args=...) at WindowBinding.cpp:1916
+function go(url) {
+  const w = window.open(url);
+
+  window.addEventListener("message", e => {
+    const interval = setInterval(() => {
+      p.textContent += JSON.stringify({ origin: e.origin, closed: w.closed }) + '\n';
+      if (w.closed) {
+        clearInterval(interval);
+      }
+    }, 0);
+
+    w.close();
+  }, { once: true });
+}
+</script>

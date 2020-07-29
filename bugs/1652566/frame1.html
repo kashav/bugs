@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body>
+  <h1>FRAME 1</h1>
+  <iframe src="frame2a.html"></iframe>
+  <script type="text/javascript">
+    window.onload = () => {
+      console.log("Navigating iframe to frame2b.html");
+      window.frames[0].location.href = "frame2b.html";
+      setTimeout(() => {
+        console.log("Go -1");
+        window.frames[0].history.go(-1);
+      }, 2000);
+    }
+  </script>
+</body>
