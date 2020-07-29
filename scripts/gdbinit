@@ -1,0 +1,13 @@
+# curl -sSL https://raw.githubusercontent.com/kashav/moz/master/scripts/gdbinit > ~/.gdbinit
+
+add-auto-load-safe-path ~/src/hg.mozilla.org/mozilla-central
+
+set unwindonsignal on
+
+set print object on
+set print static-members off
+
+python import os
+python import sys
+
+set python print-stack full
