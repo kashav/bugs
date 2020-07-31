@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+NS_ConvertUTF16toUTF8($0).get()
+]]></content>
+  <tabTrigger>utf16</tabTrigger>
+  <scope>source.c++</scope>
+</snippet>

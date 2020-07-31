@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+NS_WARNING(nsPrintfCString($0).get());
+]]></content>
+  <tabTrigger>warn</tabTrigger>
+  <scope>source.c++</scope>
+</snippet>
