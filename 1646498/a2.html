@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+  <button onclick="alert(window.location.href)">alert</button>
+  <pre></pre>
+  <script>
+    window.onload = function() {
+      let i = 0;
+      setInterval(() => {
+        document.querySelector("pre").textContent = ++i;
+      }, 1000);
+    };
+  </script>
+</body>
