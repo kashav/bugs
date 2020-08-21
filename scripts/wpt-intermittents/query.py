@@ -6,6 +6,8 @@ import sys
 QUERY = """{
   "from": "unittest",
   "select": [
+    {"name": "runs", "value": "result.test", "aggregate": "count"},
+    {"name": "ok", "value": "result.ok", "aggregate": "count"},
     {"name": "pass", "value": "result.stats.pass", "aggregate": "count"},
     {"name": "fail", "value": "result.stats.fail", "aggregate": "count"},
     {"name": "notrun", "value": "result.stats.notrun", "aggregate": "count"},
@@ -16,7 +18,7 @@ QUERY = """{
   "limit": 1000,
   "where": {"and": [
     {"in": {"repo.branch.name": ["autoland", "mozilla-central"]}},
-    {"gte": ["repo.push.date", {"date": "today-3month"}]},
+    {"gte": ["repo.push.date", {"date": "today-6month"}]},
     {"lte": ["repo.push.date", {"date": "eod"}]},
     {"regex": {"result.test": ".*%s.*"}},
     {"regex": {"run.key": ".*fis.*"}}
