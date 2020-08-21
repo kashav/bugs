@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="https://kashav.ca/bugs/1660507/a2.html"></iframe><br>
+  <button onclick="alert(window.location.href)">alert</button>
+  <button onclick="confirm(window.location.href)">confirm</button>
+  <pre></pre>
+  <script>
+    window.onload = function() {
+      let i = 0;
+      setInterval(() => {
+        document.querySelector("pre").textContent = ++i;
+      }, 1000);
+    };
+  </script>
+</body>

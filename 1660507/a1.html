@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="https://bug1660507.bmoattachments.org/attachment.cgi?id=9171434"
+          width="400"
+          height="400"></iframe><br>
+  <button onclick="alert(window.location.href)">alert</button>
+  <button onclick="confirm(window.location.href)">confirm</button>
+  <pre></pre>
+  <script>
+    window.onload = function() {
+      let i = 0;
+      setInterval(() => {
+        document.querySelector("pre").textContent = ++i;
+      }, 1000);
+    };
+  </script>
+</body>
