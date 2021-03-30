@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+dump(`${1:stack}: \${
+  new Error().stack.split("\n").map(line => line.split("@").shift()).slice(0, -1).join(" <- ")
+}\n`);
+]]></content>
+  <tabTrigger>less-pretty-stack</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
