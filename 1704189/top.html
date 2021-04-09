@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="form.html" id="frame1"></iframe>
+  <iframe src="form.html" id="frame2"></iframe>
+  <br>
+  <button onclick="remove('frame1')">remove frame 1</button>
+  <button onclick="remove('frame2')">remove frame 2</button>
+  <script type="text/javascript">
+    function remove(id) {
+      document.getElementById(id).remove();
+    }
+  </script>
+</body>
