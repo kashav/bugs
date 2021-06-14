@@ -12,3 +12,4 @@
 - [1671962](1671962) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1671962), [github](https://github.com/kashav/bugs/tree/master/1671962))
 - [1700190](1700190) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1700190), [github](https://github.com/kashav/bugs/tree/master/1700190))
 - [1704189](1704189) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1704189), [github](https://github.com/kashav/bugs/tree/master/1704189))
+- [1716366](1716366) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1716366), [github](https://github.com/kashav/bugs/tree/master/1716366))
