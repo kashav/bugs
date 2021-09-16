@@ -1,6 +1,7 @@
 ### bugs
 
 - [1566422](1566422) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1566422), [github](https://github.com/kashav/bugs/tree/master/1566422))
+- [1569820](1569820) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1569820), [github](https://github.com/kashav/bugs/tree/master/1569820))
 - [1572084](1572084) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1572084), [github](https://github.com/kashav/bugs/tree/master/1572084))
 - [1620309](1620309) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1620309), [github](https://github.com/kashav/bugs/tree/master/1620309))
 - [1620714](1620714) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1620714), [github](https://github.com/kashav/bugs/tree/master/1620714))
@@ -13,3 +14,5 @@
 - [1700190](1700190) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1700190), [github](https://github.com/kashav/bugs/tree/master/1700190))
 - [1704189](1704189) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1704189), [github](https://github.com/kashav/bugs/tree/master/1704189))
 - [1716366](1716366) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1716366), [github](https://github.com/kashav/bugs/tree/master/1716366))
+- [1718761](1718761) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1718761), [github](https://github.com/kashav/bugs/tree/master/1718761))
+- [1729641](1729641) ([bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1729641), [github](https://github.com/kashav/bugs/tree/master/1729641))
