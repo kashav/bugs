@@ -1,6 +1,6 @@
 ### bugs
 
-Minimal test cases for bugs:
+Minimal test cases:
 
 - [Bug 1566422](1566422) ([Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1566422), [GitHub](https://github.com/kashav/bugs/tree/master/1566422))
 - [Bug 1569820](1569820) ([Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1569820), [GitHub](https://github.com/kashav/bugs/tree/master/1569820))
@@ -21,5 +21,5 @@ Minimal test cases for bugs:
 
 mozilla/gecko-dev commit logs:
 
-1. [kmadan[@]mozilla[.]com](https://github.com/mozilla/gecko-dev/commits?author=kmadan@mozilla.com)
-2. [kshvmdn[@]gmail[.]com](https://github.com/mozilla/gecko-dev/commits?author=kshvmdn@gmail.com)
+1. [`kmadan@mozilla.com`](https://github.com/mozilla/gecko-dev/commits?author=kmadan@mozilla.com)
+2. [`kshvmdn@gmail.com`](https://github.com/mozilla/gecko-dev/commits?author=kshvmdn@gmail.com)
